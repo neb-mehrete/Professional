@@ -1,0 +1,245 @@
+﻿   	@font-face {
+		font-family: Quicksand-Reg;
+		src: url('../Quicksand-Regular.otf');
+	}
+	@font-face {
+		font-family: Quicksand-Bold;
+		src: url('../Quicksand-Bold.otf');
+	}
+	@font-face {
+		font-family: adventPro-Bold;
+		src: url('../Quicksand-Bold.otf');
+	}
+	@font-face {
+		font-family: adventPro-Reg;
+		src: url('../Quicksand-Reg.otf');
+	}
+	.background {
+		height: 200px;
+		width: 300px;
+		margin: 0 auto;
+		background-position: fixed;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background: webkit-linear-gradient(to top,#808080, #858585, #909090 45%);
+		background: -o-linear-gradient(to top, #808080, #858585, #909090 45%);
+		background: -moz-linear-gradient(to top, #808080, #858585, #909090 45%);
+		background: linear-gradient(to top, #808080, #858585, #999999 45%);
+	}
+	div.navBar ul#navList {
+		height: 70px;
+		width: 250px;
+		margin-top: 10px;
+		margin-left: 10px;
+		list-style: none;
+		text-decoration: none;
+		border-radius: 15%;
+		box-shadow: 4px 10px 4px 10px #3F3F3F;
+	}
+	div.navBar ul#navList li {
+		float: left;
+		width: 200px;
+		padding: 0px 2px 0px 2px;
+		border: thin black dotted;
+		border-radius: 15%;
+		text-align: center;
+		font-family: Quicksand-Bold;
+		font-size: x-small;
+		letter-spacing: 0.2em;
+		transition: border-top-color .2s ease-in-out, border-right-color .6s ease-in-out, border-bottom-color 1s ease-in-out, border-left-color .6s ease-in-out, box-shadow 1.4s ease-out;
+	}
+	div.navBar ul#navList li:hover {
+		border-top-color: white;
+		border-right-color: white;
+		border-bottom-color: white;
+		border-left-color: white;
+		box-shadow: 0px 0px 40px 0px #050505;
+		opacity: 0.7;
+	}
+	div.navBar ul#navList li.active {
+		animation-name: listItemBorder;
+		animation-duration: 2s;
+		animation-iteration-count: infinite;
+		box-shadow: 0px 0px 40px 0px #050505;
+		opacity: 0.7;
+	}
+	div.navBar ul#navList li a {
+		text-decoration: none;
+		color: black;
+	}
+	div.contentStage {
+		float: left;
+		margin: auto 0;
+		margin-left: 5px;
+		margin-top: 30px;
+		width: 300px;
+		height: 415px;
+		background: linear-gradient(to top, #939393, #969696, #999999, #A2A2A2, #A5A5A5));
+		border-radius: 5%;
+		box-shadow: 4px 10px 4px 10px #3F3F3F;
+
+	}
+	div.contentStage.taller {
+		height: 520px;
+	}
+	div.contentStage section {
+		float: left;
+		width: 100%;
+	}
+	div.contentStage section p {
+		font-family: Quicksand-Bold;
+		font-size: xx-small;
+		color: blue;
+		line-height: 0em;
+		margin-left: 75px;
+		margin-top: -17px;
+	}
+	div.contentStage section#contactCard img {
+		border: medium silver double;
+		transform: scale(0.75);
+		margin-left: 50px;
+	}
+	div.contentStage section#contactCard ul#contacts {
+		margin-left: 0px;
+		margin-top: 25px;
+		margin-left: 50px;
+		list-style-type: none;
+		display: flex;
+	}
+	div.contentStage section#contactCard ul#contacts li{
+		background: url('../images/socialMediaSprite.png') no-repeat;
+		margin-right: 5px;
+		height: 20px;
+		width: 20px;
+		border: medium silver double;
+		border-radius: 15%;
+	}
+	div.contentStage section#contactCard ul#contacts li.linkedIn {
+		background-position: -248px -5px;
+  	}
+	div.contentStage section#contactCard ul#contacts li.linkedIn:hover {
+		background-position: -248px -41px;
+		border: medium white double;
+  	}
+	div.contentStage section#contactCard ul#contacts li.fb {
+		background-position: -7px -5px;
+  	}
+	div.contentStage section#contactCard ul#contacts li.fb:hover {
+		background-position: -7px -41px;
+		border: medium white double;
+ 	}
+	div.contentStage section#contactCard ul#contacts li.rss {
+		background-position: -517px -5px;
+  	}
+	div.contentStage section#contactCard ul#contacts li.rss:hover {
+		background-position: -517px -41px;
+		border: medium white double;
+	}
+	div.contentStage section#skillset ul.cert {
+		list-style-type: none;
+		width: 20px;
+		float: left;
+		margin-top: -10px;
+	}
+  	div.contentStage section#skillset ul.cert li{
+    	background: url('../images/certs.jpg') no-repeat;
+	  	display: block;
+	  	height: 50px;
+	  	width: 77px;
+	  	border: medium silver double;
+	  	border-radius: 15%;
+	  	transform: scale(0.5);
+	}	
+  	div.contentStage section#skillset ul.cert li.ccna{
+   	 	background-position: -7px -205px; 
+	}
+  	div.contentStage section#skillset ul.cert li.ccnaSec{
+    	background-position: -152px -205px; 
+	}
+  	div.contentStage section#skillset ul.cert li.ccnp{
+    	background-position: -7px -299px; 
+	}	
+	div.contentStage > article p {
+		font-family: adventPro-Bold;
+		font-size: xx-small;
+		margin-top: 15px;
+		margin-left: 25px;
+		margin-bottom: 0px;
+		width: 275px;	
+	}
+	div.contentStage > article p::first-letter {
+		font-size: small;
+		color: #CCCCCC;
+	}
+	/* div.contentStage article p:hover {
+		background: linear-gradient(#939393, #969696, #999999, #A2A2A2, #A5A5A5);
+		border: thin white dotted;
+		border-radius: 15%;
+		box-shadow: 0px 0px 40px 0px #050505;
+		opacity: 0.7;
+	*/
+	}
+	section.expertInfo {
+		display: none;
+		float: right;
+		width: 250px;
+		height: 500px;
+		margin-top: 35px;
+		background: linear-gradient(to top, #939393, #969696, #999999, #A2A2A2, #A5A5A5);
+		border: medium black inset;
+		border-radius: 5%;
+
+	}
+@keyframes listItemBorder {
+	12% {
+		border: thin black dotted;
+		border-radius: 15%;
+		border-top-color: white;
+	}
+	24% {
+		border: thin black dotted;
+		border-radius: 15%;
+		border-top-color: white;
+		border-right-color: white;
+	}
+	36% {
+		border: thin black dotted;
+		border-radius: 15%;
+		border-top-color: white;
+		border-right-color: white;
+		border-bottom-color: white;
+	}
+	48% {
+		border: thin white dotted;
+		border-radius: 15%;
+	}
+	60% {
+		border: thin white dotted;
+		border-radius: 15%;
+	}
+	72% {
+		border: thin white dotted;
+		border-radius: 15%;
+		border-top-color: black;
+	}
+	84% {
+		border: thin white dotted;
+		border-radius: 15%;
+		border-top-color: black;
+		border-right-color: black;
+		border-bottom-color: white;
+		border-left-color: white;
+	}
+	96% {
+		border: thin white dotted;
+		border-radius: 15%;
+		border-top-color: black;
+		border-right-color: black;
+		border-bottom-color: black;
+		border-left-color: white;
+	}
+	100% {
+		border: thin black dotted;
+		border-radius: 15%;
+		opacity: 0.4;
+	}
